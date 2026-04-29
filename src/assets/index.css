@@ -1,0 +1,262 @@
+:root {
+    --primary: #1e3c72;
+    --dark: #0f2027;
+    --gold: #f39c12;
+    --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body.landing-page {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    min-height: 100vh; /* Gunakan min-height agar konten bisa scroll */
+    width: 100vw;
+    display: flex;
+    flex-direction: column; /* Pastikan konten mengalir dari atas ke bawah */
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    color: var(--white);
+}
+
+.grid-bg {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 25px 25px;
+    z-index: 1;
+}
+
+.welcome-wrapper {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+    flex-grow: 1; /* Membuat container ini mengambil sisa ruang agar footer terdorong ke bawah */
+    display: flex;
+    align-items: center;
+}
+
+.container-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* --- Visual Styling --- */
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vehicle-display {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.img-mobil {
+    width: 75%;
+    z-index: 2;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+    animation: floatMobil 4s ease-in-out infinite;
+}
+
+.img-motor {
+    width: 45%;
+    position: absolute;
+    right: 5%;
+    bottom: -5%;
+    z-index: 3;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.5));
+    animation: floatMobil 4s ease-in-out infinite 0.5s;
+}
+
+@keyframes floatMobil {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.glow-sphere {
+    position: absolute;
+    width: 300px; height: 300px;
+    background: var(--gold);
+    filter: blur(120px);
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/* Floating Elements */
+.float-item {
+    position: absolute;
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 15px;
+    color: var(--gold);
+    font-size: 1.5rem;
+    z-index: 5;
+}
+.item-bank { top: -10%; right: 10%; }
+.item-shield { bottom: 0; left: 0; }
+
+/* --- Content Styling --- */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.brand-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.highlight { color: var(--gold); }
+
+.top-badge {
+    background: rgba(243, 156, 18, 0.2);
+    color: var(--gold);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.hero-desc {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    color: var(--primary);
+    padding: 8px 8px 8px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.icon-circle {
+    background: var(--gold);
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.footer-status {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+    opacity: 0.8; /* Dinaikkan agar ikon lebih terlihat */
+    font-size: 0.9rem;
+}
+
+/* --- Footer Styling --- */
+.main-footer {
+    width: 100%;
+    padding: 30px 0;
+    z-index: 20;
+    background: rgba(15, 32, 39, 0.9);
+    margin-top: auto; /* Memastikan footer selalu di paling bawah flow flex */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+    transform: translateY(-3px);
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-copyright small {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+    body.landing-page { 
+        overflow-y: auto; 
+        justify-content: flex-start; /* Mulai dari atas agar bisa scroll ke footer */
+    }
+    
+    .welcome-wrapper {
+        margin-top: 40px;
+        align-items: flex-start;
+    }
+
+    .container-index {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-visual { margin-bottom: 10px; }
+    
+    .img-mobil { width: 85%; }
+    .img-motor { width: 50%; right: 0; }
+
+    /* Perbaikan: Jangan gunakan display: none jika ingin ikon tetap tampil di bagian lain */
+    .float-item { display: none; } 
+
+    .brand-title { font-size: 2.2rem; }
+    
+    .glass-card {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .footer-status { 
+        justify-content: center;
+        opacity: 1; /* Pastikan ikon status terlihat jelas */
+    }
+
+    .main-footer {
+        position: relative;
+        margin-top: 40px;
+    }
+}

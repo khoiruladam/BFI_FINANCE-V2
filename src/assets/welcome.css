@@ -1,0 +1,313 @@
+/* Navbar Styling */
+.glass-nav {
+    background: rgba(15, 32, 39, 0.8);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Form Styling */
+.custom-input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+}
+
+.custom-input option {
+    background: #203a43;
+    color: white;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background: var(--gold);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    box-shadow: 0 10px 20px rgba(243, 156, 18, 0.3);
+}
+
+/* List Styling */
+.custom-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.custom-list li i {
+    color: var(--gold);
+}
+
+.bg-gold-gradient {
+    background: linear-gradient(135deg, rgba(243, 156, 18, 0.2) 0%, transparent 100%) !important;
+    border: 1px solid rgba(243, 156, 18, 0.3) !important;
+}
+
+.fw-800 { font-weight: 800; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .landing-page { overflow-y: auto; height: auto; }
+    .welcome-wrapper { padding-bottom: 100px; }
+}
+/* Ukuran icon box lebih kecil untuk header syarat */
+.icon-box-sm {
+    width: 40px;
+    height: 40px;
+    background: var(--gold);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: white;
+}
+
+/* List Syarat yang lebih rapat */
+.custom-list-sm li {
+    padding: 6px 0;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.custom-list-sm li i {
+    color: var(--gold);
+    margin-top: 3px;
+    font-size: 0.9rem;
+}
+
+/* Tombol Outline untuk variasi */
+.btn-outline-gold {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    background: transparent;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn-outline-gold:hover {
+    background: var(--gold);
+    color: white;
+}
+
+/* Efek Hover pada Card Kontak */
+.shadow-hover {
+    transition: transform 0.3s ease;
+}
+.shadow-hover:hover {
+    transform: translateY(-5px);
+}
+
+.bg-gold-gradient {
+    background: linear-gradient(135deg, rgba(243, 156, 18, 0.15) 0%, rgba(15, 32, 39, 0.5) 100%) !important;
+}
+/* Container CTA Utama */
+.contact-cta {
+    padding: 35px 25px !important;
+    border: 1px solid rgba(243, 156, 18, 0.3) !important;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Ikon Headset dengan Efek Cahaya */
+.cta-icon-glow {
+    width: 60px;
+    height: 60px;
+    background: var(--gold);
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    box-shadow: 0 0 30px rgba(243, 156, 18, 0.4);
+    animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(243, 156, 18, 0.4); }
+    70% { box-shadow: 0 0 0 20px rgba(243, 156, 18, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(243, 156, 18, 0); }
+}
+
+/* Tombol WhatsApp Premium */
+.btn-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-weight: 700;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.03);
+    color: white;
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-content i {
+    font-size: 1.4rem;
+}
+
+.small-arrow {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* Tombol Telepon Minimalis */
+.btn-phone {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 10px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.btn-phone:hover {
+    opacity: 1;
+    color: var(--gold);
+    letter-spacing: 0.5px;
+}
+
+/* Background Card */
+.bg-gold-gradient {
+    background: linear-gradient(135deg, rgba(243, 156, 18, 0.1) 0%, rgba(15, 32, 39, 0.8) 100%) !important;
+}
+/* Radio Button Tenor */
+.btn-outline-gold-radio {
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+
+.btn-check:checked + .btn-outline-gold-radio {
+    background-color: var(--gold) !important;
+    border-color: var(--gold) !important;
+    color: white !important;
+    box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
+}
+
+/* Premium Result Card */
+.result-card-premium {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.02) 100%);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.result-card-premium::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 4px; height: 100%;
+    background: var(--gold);
+}
+
+.fw-800 { font-weight: 800; }
+/* Ukuran font h4 diperkecil agar pas dalam satu baris */
+h4.fw-800 {
+    font-size: 1.25rem; /* Ukuran yang lebih aman untuk mobile */
+    letter-spacing: -0.5px;
+}
+
+/* Styling simbol mata uang agar lebih kecil dan rapi */
+.currency-symbol {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Tambahan agar teks tidak turun ke bawah */
+.text-nowrap {
+    white-space: nowrap;
+}
+.currency-symbol {
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        h4.fw-800 {
+            font-size: 1.3rem;
+        }
+
+/* Responsif untuk layar sangat kecil */
+@media (max-width: 380px) {
+    h4.fw-800 {
+        font-size: 1.1rem;
+    }
+    .currency-symbol {
+        font-size: 0.75rem;
+    }
+}
+.btn-login-glass {
+    background: rgba(255, 193, 7, 0.15); /* Warna kuning transparan */
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: 8px;
+    padding: 8px 20px !important;
+    color: #ffc107 !important;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-login-glass:hover {
+    background: #ffc107;
+    color: #000 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+/* Responsif untuk mobile agar tidak terlalu mepet */
+@media (max-width: 991.98px) {
+    .btn-login-glass {
+        margin-top: 10px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+}
+/* Utility tambahan untuk memperkuat tampilan */
+    .fw-800 { font-weight: 800; }
+    
+    #hargaPasarHasil, #pinjamanHasil {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        /* Mengatur agar angka tidak terlalu dempet */
+        letter-spacing: -0.5px;
+    }
+
+    /* Efek halus saat angka berubah */
+    #hargaPasarHasil, #pinjamanHasil {
+        transition: all 0.3s ease;
+    }
