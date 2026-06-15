@@ -18,9 +18,9 @@ Project ini adalah Sistem Manajemen Data Unit Kendaraan dan Simulasi Pembiayaan 
 
 ## 🛠️ Tech Stack
 
-* **Language:** PHP 8.2 (Native)
-* **Database:** MySQL 8.0
+* **Language:** PHP, Laravel 
+* **Database:** MySQL
 * **Containerization:** Docker & Docker Compose
-* **Frontend:** Bootstrap 5.3, JavaScript (Vanilla ES6+), CSS3 Custom Animations
+* **Frontend:** Bootstrap, JavaScript, CSS3 Custom Animations
 * **UI Assets:** FontAwesome 6, Google Fonts (Plus Jakarta Sans)
-* **Library:** SweetAlert2 (Pop-up alerts)
+* **Library:** SweetAlert2
