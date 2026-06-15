@@ -24,15 +24,3 @@ Project ini adalah Sistem Manajemen Data Unit Kendaraan dan Simulasi Pembiayaan 
 * **Frontend:** Bootstrap 5.3, JavaScript (Vanilla ES6+), CSS3 Custom Animations
 * **UI Assets:** FontAwesome 6, Google Fonts (Plus Jakarta Sans)
 * **Library:** SweetAlert2 (Pop-up alerts)
-
----
-## 📂 Struktur File CSV (Untuk Import)
-
-Untuk menggunakan fitur **Import Unit**, pastikan file `.csv` Anda memiliki urutan kolom sebagai berikut:
-`merk_id, nama_unit, model, tahun_keluaran, harga_pasar`
-
-Contoh isi file:
-```csv
-1,Avanza,G Luxury,2022,210000000
-1,Innova,Reborn,2021,350000000
-2,Brio,Satya,2023,165000000
