@@ -1,6 +1,6 @@
 # 🏦 BFI Finance - Dashboard Management System
 
-[![Live Website](http://bfi-finance.page.gd/)
+[![Live Website](https://img.shields.io/badge/🌍_Live_Website-Klik_Di_Sini-blue?style=for-the-badge)](http://bfi-finance.page.gd/)
 
 Project ini adalah Sistem Manajemen Data Unit Kendaraan dan Simulasi Pembiayaan yang dibangun khusus untuk **BFI Finance**. Aplikasi ini menggunakan arsitektur modern berbasis Docker dengan antarmuka **Glassmorphism UI** yang mewah dan responsif.
 
@@ -12,7 +12,7 @@ Project ini adalah Sistem Manajemen Data Unit Kendaraan dan Simulasi Pembiayaan 
 | :---: | :---: | :---: |
 | ![Dashboard](src/tampilan_1.png) | ![Manajemen Unit](src/tampilan_2.png)
 
-> **Catatan untuk Anda:** Pastikan Anda membuat folder `images/bfi_finance/` di proyek Anda, lalu masukkan gambar-gambar Anda ke dalamnya dengan nama `dashboard.png`, `manajemen_unit.png`, dan `simulasi.png`.
+> **Catatan untuk Anda:** Pastikan Anda membuat folder `images/bfi_finance/` di proyek Anda, lalu masukkan gambar-gambar Anda ke dalamnya dengan nama `tampilan_1.png`, `tampilan_2.png`
 
 ---
 
