@@ -10,7 +10,7 @@ Project ini adalah Sistem Manajemen Data Unit Kendaraan dan Simulasi Pembiayaan 
 
 | **Halaman Dashboard** | **Manajemen Unit** | **Simulasi Pembiayaan** |
 | :---: | :---: | :---: |
-| ![Dashboard](tampilan_1.png) | ![Manajemen Unit](tampilan_2.png)
+| ![Dashboard](src/tampilan_1.png) | ![Manajemen Unit](src/tampilan_2.png)
 
 > **Catatan untuk Anda:** Pastikan Anda membuat folder `images/bfi_finance/` di proyek Anda, lalu masukkan gambar-gambar Anda ke dalamnya dengan nama `dashboard.png`, `manajemen_unit.png`, dan `simulasi.png`.
 
