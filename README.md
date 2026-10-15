@@ -8,7 +8,7 @@ Project ini adalah Sistem Manajemen Data Unit Kendaraan dan Simulasi Pembiayaan 
 
 ## 📸 Cuplikan Antarmuka (Screenshots)
 
-| **Halaman Dashboard** | **Manajemen Unit** | **Simulasi Pembiayaan** |
+| **Halaman Dashboard** | **Manajemen Unit** |
 | :---: | :---: | :---: |
 | ![Dashboard](src/tampilan_1.png) | ![Manajemen Unit](src/tampilan_2.png)
 
